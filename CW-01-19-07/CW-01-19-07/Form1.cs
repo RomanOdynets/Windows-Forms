@@ -151,5 +151,45 @@ namespace CW_01_19_07
             numbers.Clear();
             action.Clear();
         }
+
+        private void dot_btn_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.BackColor = Color.Blue;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void Form1_MouseEnter(object sender, EventArgs e)
+        {
+            Form1 form = (Form1)sender;
+            form.Text = "Mouse enter";
+        }
+
+        private void Form1_MouseLeave(object sender, EventArgs e)
+        {
+            Form1 form = (Form1)sender;
+            form.Text = "Mouse leave";
+        }
+
+        private void Enter_Button(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.BackColor = Color.Blue;
+        }
+
+        private void Leave_Button(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.BackColor = SystemColors.Control;
+        }
     }
 }
